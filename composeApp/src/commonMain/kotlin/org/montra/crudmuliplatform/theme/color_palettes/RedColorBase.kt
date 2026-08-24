@@ -22,13 +22,13 @@ object RedColorBase : MaterialThemeColorsPalette {
     override val errorLD: Color = Color(0xFF490606)
     override val onError: Color = Color.White
 
-    override val primaryDark: Color = Color(0xFFFF9F9F)
-    override val onPrimaryDark: Color = Color(0xFF470808)
-    override val primaryContainerDark: Color = Color(0xFFA21212)
-    override val onPrimaryContainerDark: Color = Color(0xFFFF6767)
+    override val primaryDark: Color = Color(0xFF0004FF)
+    override val onPrimaryDark: Color = Color(0xFFFFFFFF)
+    override val primaryContainerDark: Color = Color(0xFF123BA2)
+    override val onPrimaryContainerDark: Color = Color(0xFFFFFFFF)
 
-    override val secondaryDark: Color = Color(0xFFfadf8d)
-    override val onSecondaryDark: Color = Color(0xFF431705)
+    override val secondaryDark: Color = Color(0xFFFA8D8D)
+    override val onSecondaryDark: Color = Color(0xFF430505)
     override val secondaryContainerDark: Color = Color(0xFFA0EFEB)
     override val onSecondaryContainerDark: Color = Color(0xFF17858A)
 

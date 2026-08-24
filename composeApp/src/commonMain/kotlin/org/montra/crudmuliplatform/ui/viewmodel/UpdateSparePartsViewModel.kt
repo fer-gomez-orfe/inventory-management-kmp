@@ -11,7 +11,6 @@ import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import org.montra.crudmuliplatform.data.model.SparePartModel
 import org.montra.crudmuliplatform.data.repository.SparePartsRepository
-import java.util.Collections.emptyList
 
 @OptIn(FlowPreview::class)
 class UpdateSparePartsViewModel (
@@ -114,7 +113,7 @@ class UpdateSparePartsViewModel (
                 _spareParts.value = parts
             } catch (e: Exception) {
                 // Manejo de errores
-                Logger.e { "Error al cargar datos" }
+                Logger.e(e) { "Error al cargar datos: ${e.message}" }
 
             }
         }

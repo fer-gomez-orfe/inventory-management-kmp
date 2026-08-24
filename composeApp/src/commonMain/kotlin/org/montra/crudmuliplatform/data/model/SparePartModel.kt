@@ -4,14 +4,14 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class SparePartModel (
-    val serial_number: String,
-    val item_Eng: String,
-    val item_Esp: String,
-    val description: String,
-    val part_number: String,
-    val cantidad: Int,
-    val notas: String,
-    val ult_actualizacion: String
+    val serial_number: String = "",
+    val item_Eng: String = "",
+    val item_Esp: String = "",
+    val description: String = "",
+    val part_number: String = "",
+    val cantidad: Int = 0,
+    val notas: String = "",
+    val ult_actualizacion: String = ""
 ){
     fun doesMatchSearchQuery(query: String): Boolean {
         val matchingCombinations = listOf(

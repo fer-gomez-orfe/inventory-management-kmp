@@ -17,12 +17,14 @@ import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Button
 import androidx.compose.material3.Icon
+import androidx.compose.material.icons.Icons
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
-import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Email
 import androidx.compose.material.icons.filled.Lock
+import androidx.compose.material.icons.filled.Person
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -38,7 +40,7 @@ import androidx.compose.ui.unit.sp
 import cafe.adriel.voyager.core.screen.Screen
 import cafe.adriel.voyager.navigator.LocalNavigator
 import crud_multiplatform.composeapp.generated.resources.Res
-import crud_multiplatform.composeapp.generated.resources.logo_blanco_rojo_montra
+import crud_multiplatform.composeapp.generated.resources.allDrawableResources
 import org.jetbrains.compose.resources.painterResource
 import org.montra.crudmuliplatform.theme.color_palettes.RedColorBase
 
@@ -147,9 +149,12 @@ class LogInScreen:Screen {
         Box(
             modifier = Modifier.fillMaxWidth().height(200.dp).background(Color.Black),
             contentAlignment = Alignment.Center) {
-            Image(painterResource(Res.drawable.logo_blanco_rojo_montra),
-                null,
-                modifier = Modifier.size(200.dp))
+            Icon(
+                imageVector = Icons.Default.Person,
+                contentDescription = null,
+                modifier = Modifier.size(100.dp),
+                tint = MaterialTheme.colorScheme.primary
+            )
         }
     }
 

@@ -61,7 +61,7 @@ class SparePartsCatalogViewModel(
                 _spareParts.value = parts
             } catch (e: Exception) {
                 // Manejo de errores
-                Logger.e { "Error al cargar datos" }
+                Logger.e(e) { "Error al cargar datos: ${e.message}" }
 
             }
         }
